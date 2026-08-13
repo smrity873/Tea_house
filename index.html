@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea_house</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font_awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- nav section -->
+    <header class=" w-full bg-green-100">
+        <div class="navbar max-w-7xl  lg:mx-auto bg-base-100 bg-green-100 shadow-sm">
+            <div class="flex-1">
+                <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+                <img src="./images/logo.png" class="w-[150px]" alt="">
+            </div>
+            <div class="flex gap-2">
+                <!-- <input type="text" placeholder="Search" class="input w-12 md:w-auto" /> -->
+               <label class="input rounded-full border border-green-500">
+    <svg
+        class="h-[1em] opacity-50"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+    >
+        <g
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2.5"
+            fill="none"
+            stroke="currentColor"
+        >
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+        </g>
+    </svg>
+
+    <input type="search" required placeholder="Search" />
+</label>
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img alt="Tailwind CSS Navbar component"
+                                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                        </div>
+                    </div>
+                    <ul tabindex="-1"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                                <span class="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner section start here -->
+    <div
+        class="parent_div items-center flex flex-col lg:flex-row justify-between gap-10 lg:gap-x-64 max-w-7xl min-h-[200px] h-[70vh] mx-auto px-4 lg:px-0 ">
+        <!-- let div  -->
+        <div class="left_div flex-1 ">
+            <h1 class="text-3xl text-blue-950 font-bold lg:text-6xl capitalize">
+                It's good<br>
+                tea time at The Tea House
+            </h1>
+            <p class="text-[16px] text-slate-700 my-10">
+                Tea and Botanical Solutions Supplier Give Optimum<br>Satisfaction To Your Taste Buds.
+            </p>
+            <button class="btn !border-0 !text-white
+    !bg-gradient-to-r !from-orange-400 !to-red-500
+    hover:!from-red-500 hover:!to-green-600
+    transition-all duration-300 w-[150px]">
+                Explore More
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <!-- <button
+                class="btn btn-primary text-lg text-white bg-gradient-to-r from-orange-500 to-red-600 w-[150px] h-[40px] rounded-lg items-center cursor-pointer hover:scale-105 transition duration-30 shadow-lg hover:from-black">
+                Explore More
+            </button> -->
+
+        </div>
+
+        <!-- right div  -->
+        <div class="right_div items-center relative">
+            <img src="./images/banner.png" class="w-[600px]" alt="">
+
+            <div
+                class="lg:absolute bottom-[-5px] left-10 flex items-center h-[60px] w-[250px] rounded-lg bg-white shadow-lg px-3 mx-auto">
+
+                <span class="text-4xl">
+                    <i class="fa-solid fa-star text-yellow-400 animate-pulse"></i>
+                </span>
+
+                <div class="ml-4">
+                    <p class="text-xl text-bold">5.00</p>
+                    <p>Trust Pilot Rating</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
